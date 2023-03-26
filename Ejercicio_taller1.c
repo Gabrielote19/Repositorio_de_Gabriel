@@ -1,4 +1,4 @@
-/*Ejercicio_Taller1*/ 
+/*Ejercicio_Taller1*/ /*Nelson Lopez y Gabriel Garcia*/
 /*Escribir en lenguaje C que pida por teclado n numeros por teclados enteros cada uno de ellos debe ser introducido mientras que no sea distinto de 0: Calcular:
 1.¿Cuantos son pares o impares?
 2.¿Cuantos 0´s se han introducido por el teclado

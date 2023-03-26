@@ -1,3 +1,12 @@
+/*Ejercicio Taller 2*/ /*Nelson Lopez y Gabriel Garcia*/
+/*Escribir un programa c que permita las citas medicas de la clinica ABC de n cantidad de pacientes, permitiendo mostrar en pantalla:
+1) Cantidad de pacientes Femeninos
+2) Cantidad de pacientes Masculinos
+3) Cantidad de pacientes de mayor y menor edad
+4) Validar la fecha de nacimiento de cada paciente
+5) Los pacientes cuya cedula de identidad termine en un numero par y sean femeninos tendran un descuento del 15% sobre elcosto de la consulta
+6) Los pacientes masculinos quetengan una edad mayor a 60 años tendran undescuento del 30%*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -32,6 +41,10 @@ int main ()
         putchar ('\n');
         printf("\n Ingrese su cedula de identidad: ");
         scanf("%d", &cedula);
+        if (cedula%2== 0 && femenino)
+         descuento_femenino = descuento_femenino + 1;
+         if (masculino==edad>60)
+         descuento_masculino = descuento_masculino + 1;
 
         printf( "\n   Introduzca edad: " );
         scanf( "%d", &edad );
@@ -88,11 +101,6 @@ int main ()
     else
         printf( "\n   FECHA INCORRECTA" );
     }
-
-         if (cedula%2 == 0 && femenino)
-         descuento_femenino = descuento_femenino + 1;
-         if (masculino==edad>60)
-         descuento_masculino = descuento_masculino+1;
 
     printf("\n La cantidad de pacientes masculinos son: %d", masculino);
     printf("\n La cantidad de pacientes femeninos son: %d", femenino);
